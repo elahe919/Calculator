@@ -1,17 +1,16 @@
-const resultDisplay = document.querySelector(".result-display");
-
+let resultDisplay = document.querySelector(".result-display");
 
 function showItem(event) {
   const a = event.target.innerText;
   if (resultDisplay.innerHTML == 0) {
-    return (resultDisplay.innerHTML = a);
+    return resultDisplay.innerHTML = a;
   } 
-    return (resultDisplay.innerHTML += a);
+    return resultDisplay.innerHTML += a;
 }
 
 function calculate(){
-    let result = resultDisplay.innerText;
-    resultDisplay.innerText = eval(result);
+    let cal = resultDisplay.innerText;
+    resultDisplay.innerText = eval(cal);
 }
 
 function clearAll() {
@@ -28,15 +27,9 @@ function clear() {
 }
 
 
-document
-  .querySelector(".result")
-  .addEventListener("click", calculate);
-document
-  .querySelector(".clear-all")
-  .addEventListener("click", clearAll);
-document
-  .querySelector(".clear-last")
-  .addEventListener("click", clear);
+document.querySelector(".calculate").addEventListener("click", calculate);
+document.querySelector(".clear-all").addEventListener("click", clearAll);
+document.querySelector(".clear-last").addEventListener("click", clear);
 
 let showKey = document.querySelectorAll(".key");
 showKey.forEach(element => {
