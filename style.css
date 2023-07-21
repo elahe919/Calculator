@@ -1,24 +1,21 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     font-size: 30px;
     font-family: Arial;
  }
  body{
     background-color: #000000;
  }
- .calculate{
+ .calculator{
     width: 400px;
-    margin: 100px auto;
+    margin:  auto;
  }
-.result-display{
+.display{
     color: #ffffff;
     text-align: right;
     font-size: 60px;
     padding: 20px;
  }
- 
+
  .keypad-table tr:first-child .key{
     background-color: #a5a5a5;
  }
